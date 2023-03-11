@@ -1,0 +1,30 @@
+:root {
+    --size: 1.8rem;
+    --rounded: 15px;
+    cursor: none;
+  }
+  
+  #mouse-follower,
+  #dot {
+    opacity: 1;
+    top: -10px;
+    left: -10px;
+    transform: translate(-50%, -50%);
+    border-radius: var(--rounded);
+    position: fixed;
+    transition: 100ms ease-in-out;
+    pointer-events: none;
+  }
+  
+  #mouse-follower {
+    height: var(--size);
+    width: var(--size);
+    border: 1px solid #3fc090;
+  }
+  
+  #dot {
+    height: calc(var(--size) / 2);
+    width: calc(var(--size) / 2);
+    background: #61e1b2;
+  }
+  

@@ -1,0 +1,29 @@
+#about {
+  .container > .row {
+    @include media($bp-lg) {
+      height: min(800px, 95vh);
+    }
+  }
+
+  #about_section {
+    h1 {
+      @include h1;
+    }
+
+    p {
+      font-size: 1.2rem;
+      @include font-secondary;
+    }
+  }
+
+  #img_section{
+    -webkit-filter: drop-shadow(5px 5px 5px #222 );
+    filter: drop-shadow(5px 5px 5px #222);
+    @include transition;
+  
+    &:hover {
+      transform: scale(1.1);
+    } 
+  }
+
+}
