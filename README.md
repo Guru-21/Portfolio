@@ -4,7 +4,7 @@
 ## To Run the application type below command
 - npm install
 - npm run dev
-After that the application will run on the below port
+- After that the application will run on the below port
     Local: http://localhost:3000/
   
 
